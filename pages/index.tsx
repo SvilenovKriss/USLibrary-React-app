@@ -34,17 +34,14 @@ function Home() {
 
       <main>
         <h1>
-          Welcome to{" "}
-          <a href="https://github.com/LimeChain/next-web3-boilerplate">
-            LimeAcademy-boilerplate
-          </a>
+          US Elections
         </h1>
 
         {isConnected && (
           <section>
             <NativeCurrencyBalance />
 
-            <TokenBalance tokenAddress={ALBT_TOKEN_ADDRESS} symbol="ALBT" />
+            {/* <TokenBalance tokenAddress={ALBT_TOKEN_ADDRESS} symbol="ALBT" /> */}
             <USLibrary contractAddress={US_ELECTION_ADDRESS} />
           </section>
         )}
